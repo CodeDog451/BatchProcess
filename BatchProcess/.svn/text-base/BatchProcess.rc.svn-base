@@ -1,0 +1,438 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\BatchProcess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\BatchProcess.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About BatchProcess"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "BatchProcess Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_BATCHPROCESS_DIALOG DIALOGEX 0, 0, 578, 356
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_APPWINDOW
+CAPTION "Batch Process"
+MENU IDR_MENUMAIN
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_COMPANYID,7,79,40,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_STATES,47,89,47,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CONTACT,95,100,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_ORDERID,136,116,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_FAXNUMBER,177,100,63,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Verified",IDC_CHECK_VERIFIED,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,140,81,40,10
+    PUSHBUTTON      "Read",IDC_BUTTON_READ,441,161,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Print Lead List",IDC_BUTTON_PRINT_LIST,422,157,87,15,NOT WS_VISIBLE
+    PUSHBUTTON      "Print Internet Lead List",IDC_BUTTON_PRINT_INTERNET,404,159,102,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Test Order",IDC_BUTTON_TEST_ORDER,462,114,50,14,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "Exit",IDOK,7,37,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,445,158,50,16,NOT WS_VISIBLE
+    PUSHBUTTON      "Test",IDC_BUTTON_TEST,485,22,54,14,NOT WS_VISIBLE
+    LISTBOX         IDC_LIST_OUTPUT,7,77,564,272,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "States",IDC_STATIC_STATES,50,95,22,8,NOT WS_VISIBLE
+    LTEXT           "Company ID",IDC_STATIC,7,94,40,8,NOT WS_VISIBLE
+    LTEXT           "Contact",IDC_STATIC_STATES2,95,95,26,8,NOT WS_VISIBLE
+    LTEXT           "Order ID",IDC_STATIC,139,100,29,8,NOT WS_VISIBLE
+    LTEXT           "Fax Number",IDC_STATIC,177,103,40,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_QUANTITY,239,108,33,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Quantity",IDC_STATIC,239,96,29,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_EMAIL,274,100,118,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Email",IDC_STATIC,273,98,17,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AGENT,393,105,41,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Agent",IDC_STATIC,399,102,20,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_RATE,462,110,41,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Rate Filter",IDC_STATIC,462,100,34,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_ZIP_FILTER,463,137,95,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Zip Filter",IDC_STATIC,463,129,28,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_DESIRED_LOAN_FILTER,7,83,76,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Disired Loan Filter",IDC_STATIC,7,76,58,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_AREACODE_FILTER,83,83,55,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Areacode Filters",IDC_STATIC,83,77,53,8,NOT WS_VISIBLE
+    CONTROL         "One Pass",IDC_CHECK_ONEPASS,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,140,89,46,10
+    CONTROL         "Send Excel",IDC_CHECK_EXCEL,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,186,91,51,10
+    CONTROL         "Send Fax",IDC_CHECK_FAX,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,240,81,46,10
+    CONTROL         "Send Word",IDC_CHECK_WORD,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,186,81,51,10
+    CONTROL         "1 Lead/Page",IDC_CHECK_ONELEAD,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,240,91,56,10
+    LTEXT           "Cash Out",IDC_STATIC,351,76,31,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CASHOUT,349,84,56,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_2NDMORTGAGE,405,83,56,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "2nd Mortgage",IDC_STATIC,405,75,46,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_DEBTCON,463,159,56,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Debt Con",IDC_STATIC,463,152,31,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Open Internet Orders",IDC_BUTTON_OPEN_INTERNET_ORDERS,339,126,78,14,NOT WS_VISIBLE
+    CONTROL         "Send EmailNote",IDC_CHECK_EMAILNOTE,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,285,81,65,10
+    CONTROL         "Print",IDC_CHECK_PRINT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,295,91,31,10
+    EDITTEXT        IDC_EDIT_LOOKINGTO,144,105,54,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Looking To",IDC_STATIC,145,96,35,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_LANG,199,105,54,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Language",IDC_STATIC,200,97,32,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CREDIT,253,105,54,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Credit Score",IDC_STATIC,253,96,40,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_HOMETYPE,307,105,40,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Home Type",IDC_STATIC,307,96,37,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_LOCATION,347,105,54,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Location",IDC_STATIC,348,97,28,8,NOT WS_VISIBLE
+    CONTROL         "Priority",IDC_CHECK_PRIORITY,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,71,131,39,10
+    CONTROL         "Mini 1003",IDC_CHECK_MINI1003,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,108,131,46,10
+    CONTROL         "Ad Campaign",IDC_CHECK_ADCAMPAIGN,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,152,131,58,10
+    EDITTEXT        IDC_EDIT_AGENTID,519,160,41,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Agent ID",IDC_STATIC,521,152,30,8,NOT WS_VISIBLE
+    CONTROL         "Subprime",IDC_CHECK_SUBPRIME,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,209,132,45,10
+    EDITTEXT        IDC_EDIT_SQL,18,100,439,101,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_VISIBLE | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "SQL",IDC_STATIC,7,142,14,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Open One Pass Orders",IDC_BUTTON_OPEN_INTERNET_ONEPASS,382,127,78,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_SFR,401,104,54,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_MOBILE,463,61,54,15,ES_AUTOHSCROLL | NOT WS_VISIBLE,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_EDIT_COMMERCIAL,517,61,54,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "SFR",IDC_STATIC,401,97,14,8,NOT WS_VISIBLE
+    LTEXT           "Mobile",IDC_STATIC,463,53,21,8,NOT WS_VISIBLE
+    LTEXT           "Commercial",IDC_STATIC,517,53,37,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CITY,461,84,54,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "City",IDC_STATIC,461,77,14,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_LTV,517,84,54,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "LTV",IDC_STATIC,517,76,12,8,NOT WS_VISIBLE
+    CONTROL         "LTV Above",IDC_CHECK_ABOVE,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,517,100,50,10
+    PUSHBUTTON      "Auto Process",IDC_BUTTON_PROCESS,7,7,50,14
+    PUSHBUTTON      "Stop Process",IDC_BUTTON_STOP,7,22,50,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT_LAST_ORDER_QUANTITY,7,105,44,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Last Quantity",IDC_STATIC,7,96,44,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_COMPANY_ORDERS_COUNT,52,105,59,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Comp Total Orders",IDC_STATIC_COMPANY_COUNT_ORDERS,51,97,61,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_YIELD,111,105,31,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Yield",IDC_STATIC_COMPANY_COUNT_ORDERS2,112,97,29,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CAMPAIGNID,7,126,61,15,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "Campaign ID",IDC_STATIC,7,118,42,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_LEADTYPE,65,17,64,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_ORDERTYPE,129,17,152,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Processing",IDC_STATIC,62,7,223,29
+    CONTROL         "",IDC_PROGRESS_READ,"msctls_progress32",WS_BORDER,61,36,224,14
+    PUSHBUTTON      "Process Verifed",IDC_BUTTON_VERIFIED,289,22,66,14
+    PUSHBUTTON      "Process Internet",IDC_BUTTON_INTERNET,289,37,66,14
+    PUSHBUTTON      "Process One-Pass",IDC_BUTTON_ONEPASS,289,52,66,14
+    COMBOBOX        IDC_COMBO_GROUP,365,7,93,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PROGRESS_OVERALL,"msctls_progress32",WS_BORDER,61,54,224,14
+    PUSHBUTTON      "Retry Sending",IDC_BUTTON_RETRY,365,22,66,14
+    PUSHBUTTON      "Generate Orders",IDC_BUTTON_GEN_ORDERS,289,7,66,14
+    PUSHBUTTON      "Send Stats Email",IDC_BUTTON_STATS,365,37,66,14
+    COMBOBOX        IDC_COMBO_STATES,467,7,84,75,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Author Kenenth Peterson"
+            VALUE "CompanyName", "Country Loans"
+            VALUE "FileDescription", "BatchPro Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "BatchProcess"
+            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "OriginalFilename", "BatchProcess.exe"
+            VALUE "ProductName", " BatchPro Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_BATCHPROCESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 571
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 349
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENUMAIN MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BATCHPROCESS_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_GROUP, 0x403, 9, 0
+0x7250, 0x6f69, 0x6972, 0x7974, "\000" 
+    IDC_COMBO_GROUP, 0x403, 24, 0
+0x6553, 0x746e, 0x5a20, 0x7265, 0x206f, 0x6e6f, 0x4c20, 0x7361, 0x2074, 
+0x724f, 0x6564, 0x0072, 
+    IDC_COMBO_GROUP, 0x403, 13, 0
+0x654e, 0x2077, 0x7543, 0x7473, 0x6d6f, 0x7265, "\000" 
+    IDC_COMBO_GROUP, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4b41, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4c41, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x5241, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x5a41, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4143, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4f43, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x5443, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4344, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4544, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4c46, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4147, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4948, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4149, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4449, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4c49, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4e49, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x534b, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x594b, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x414c, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x414d, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x444d, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x454d, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x494d, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4e4d, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4f4d, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x534d, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x544d, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x434e, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x444e, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x454e, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x484e, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4a4e, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4d4e, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x564e, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x594e, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x484f, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4b4f, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x524f, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4150, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4952, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4353, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4453, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4e54, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x5854, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x5455, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4156, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x5456, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4157, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x4957, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x5657, "\000" 
+    IDC_COMBO_STATES, 0x403, 3, 0
+0x5957, "\000" 
+    IDC_COMBO_STATES, 0x403, 4, 0
+0x4c41, 0x004c, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About BatchProcess..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\BatchProcess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

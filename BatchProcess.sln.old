@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BatchProcess", "BatchProcess\BatchProcess.vcproj", "{6DE460D8-F905-45C6-9670-204C1E901FE2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6DE460D8-F905-45C6-9670-204C1E901FE2}.Debug.ActiveCfg = Debug|Win32
+		{6DE460D8-F905-45C6-9670-204C1E901FE2}.Debug.Build.0 = Debug|Win32
+		{6DE460D8-F905-45C6-9670-204C1E901FE2}.Release.ActiveCfg = Release|Win32
+		{6DE460D8-F905-45C6-9670-204C1E901FE2}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
